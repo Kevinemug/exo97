@@ -1,7 +1,9 @@
+import Tasking from "./Components/Tasking"
+
 function App() {
   return (
     <>
-    <h1>To do app</h1>
+    <Tasking/>
     </>
   )
 }
