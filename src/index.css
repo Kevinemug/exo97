@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.dramatic-input {
+    @apply bg-black text-white text-xl font-bold border border-white p-4 w-64 rounded-lg transition-transform duration-300 ease-in-out transform shadow-xl;
+    background-image: linear-gradient(45deg, #f06, #9f6);
+    background-clip: text;
+    color: transparent;
+    border-width: 3px;
+    width: 80%;
+  }
+  
+  .dramatic-input::placeholder {
+    @apply text-gray-300;
+  }
+  
+  .dramatic-input:focus {
+    @apply outline-none border-purple-500 scale-105;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  }
+  
+  .dramatic-input:focus::placeholder {
+    @apply opacity-0;
+  }
+  /* @layer components {
+    .modal-enter {
+      @apply transform scale-95 opacity-0;
+    }
+    .modal-enter-active {
+      @apply transform scale-100 opacity-100;
+      transition: transform 1000ms, opacity 300ms;
+    }
+    .modal-leave {
+      @apply transform scale-100 opacity-100;
+    }
+    .modal-leave-active {
+      @apply transform scale-95 opacity-0;
+      transition: transform 300ms, opacity 300ms;
+    }
+  } */
+  
